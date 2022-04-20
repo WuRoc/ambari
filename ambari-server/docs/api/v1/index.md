@@ -45,6 +45,8 @@ Authentication
 The operations you perform against the Ambari API require authentication. Access to the API requires the use of **Basic Authentication**. To use Basic Authentication, you need to send the **Authorization: Basic** header with your requests. For example, this can be handled when using curl and the --user option.
 
     curl --user name:password http://{your.ambari.server}/api/v1/clusters
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters
+    
 
 _Note: The authentication method and source is configured at the Ambari Server. Changing and configuring the authentication method and source is not covered in this document._
 
@@ -60,6 +62,8 @@ Use the GET method to read the properties, metrics and sub-resources of an Ambar
 Get the DATANODE component resource for the HDFS service of the cluster named 'c1'.
 
     GET /clusters/c1/services/HDFS/components/DATANODE
+    curl --user admin:admin http://172.28.30.95:8080/clusters/c1/services/HDFS/components/DATANODE
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS
 
 **Response**
 

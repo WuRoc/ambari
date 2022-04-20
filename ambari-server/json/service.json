@@ -1,0 +1,117 @@
+{
+  "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/",
+  "items": [
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/AMBARI_INFRA_SOLR",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "AMBARI_INFRA_SOLR"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/AMBARI_METRICS",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "AMBARI_METRICS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HBASE",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "HBASE"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HIVE",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "HIVE"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/KNOX",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "KNOX"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/LOGSEARCH",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "LOGSEARCH"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/MAPREDUCE2",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "MAPREDUCE2"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/RANGER",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "RANGER"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/SMARTSENSE",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "SMARTSENSE"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/SPARK2",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "SPARK2"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/SQOOP",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "SQOOP"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/TEZ",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "TEZ"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/YARN",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "YARN"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/ZEPPELIN",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "ZEPPELIN"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/ZOOKEEPER",
+      "ServiceInfo": {
+        "cluster_name": "test_tpln",
+        "service_name": "ZOOKEEPER"
+      }
+    }
+  ]
+}

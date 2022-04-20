@@ -1,0 +1,575 @@
+{
+  "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS",
+  "ServiceInfo": {
+    "cluster_name": "test_tpln",
+    "credential_store_enabled": "false",
+    "credential_store_supported": "false",
+    "desired_repository_version_id": 8,
+    "desired_stack": {
+      "stackName": "HDP",
+      "stackVersion": "3.0",
+      "stackId": "HDP-3.0"
+    },
+    "kerberos_enabled": false,
+    "maintenance_state": "OFF",
+    "repository_state": "CURRENT",
+    "service_name": "HDFS",
+    "sso_integration_desired": false,
+    "sso_integration_enabled": false,
+    "sso_integration_requires_kerberos": true,
+    "sso_integration_supported": true,
+    "state": "STARTED"
+  },
+  "alerts_summary": {
+    "CRITICAL": 5,
+    "MAINTENANCE": 0,
+    "OK": 33,
+    "UNKNOWN": 5,
+    "WARNING": 1
+  },
+  "alerts": [
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/644",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 642,
+        "definition_name": "datanode_process_percent",
+        "host_name": null,
+        "id": 644,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/693",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 632,
+        "definition_name": "datanode_storage_percent",
+        "host_name": null,
+        "id": 693,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/756",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 629,
+        "definition_name": "journalnode_process_percent",
+        "host_name": null,
+        "id": 756,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/660",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 624,
+        "definition_name": "namenode_webui",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 660,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/661",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 634,
+        "definition_name": "upgrade_finalized_state",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 661,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/673",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 621,
+        "definition_name": "datanode_process",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 673,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/679",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 625,
+        "definition_name": "datanode_webui",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 679,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/680",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 645,
+        "definition_name": "namenode_last_checkpoint",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 680,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/681",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 618,
+        "definition_name": "datanode_health_summary",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 681,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/684",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 628,
+        "definition_name": "nfsgateway_process",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 684,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/688",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 639,
+        "definition_name": "namenode_directory_status",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 688,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/697",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 623,
+        "definition_name": "namenode_hdfs_blocks_health",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 697,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/698",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 619,
+        "definition_name": "datanode_unmounted_data_dir",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 698,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/699",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 626,
+        "definition_name": "datanode_storage",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 699,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/700",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 643,
+        "definition_name": "namenode_hdfs_capacity_utilization",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 700,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/701",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 644,
+        "definition_name": "namenode_rpc_latency",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 701,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/703",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 614,
+        "definition_name": "namenode_hdfs_pending_deletion_blocks",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 703,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/704",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 617,
+        "definition_name": "datanode_heap_usage",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 704,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/717",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 612,
+        "definition_name": "namenode_cpu",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 717,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/718",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 635,
+        "definition_name": "namenode_client_rpc_processing_latency_hourly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 718,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/720",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 627,
+        "definition_name": "namenode_service_rpc_processing_latency_hourly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 720,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/721",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 640,
+        "definition_name": "namenode_service_rpc_queue_latency_hourly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 721,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/723",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 631,
+        "definition_name": "namenode_client_rpc_queue_latency_hourly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 723,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/726",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 622,
+        "definition_name": "namenode_client_rpc_processing_latency_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 726,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/727",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 633,
+        "definition_name": "namenode_service_rpc_processing_latency_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 727,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/728",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 615,
+        "definition_name": "namenode_client_rpc_queue_latency_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 728,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/729",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 620,
+        "definition_name": "namenode_service_rpc_queue_latency_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 729,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/730",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 646,
+        "definition_name": "increase_nn_heap_usage_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 730,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/731",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 630,
+        "definition_name": "namenode_increase_in_storage_capacity_usage_daily",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 731,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/751",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 636,
+        "definition_name": "namenode_increase_in_storage_capacity_usage_weekly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 751,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/752",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 641,
+        "definition_name": "increase_nn_heap_usage_weekly",
+        "host_name": "ali-dev-data-ambari-server001",
+        "id": 752,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/621",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 621,
+        "definition_name": "datanode_process",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 621,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/623",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 613,
+        "definition_name": "secondary_namenode_process",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 623,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/629",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 625,
+        "definition_name": "datanode_webui",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 629,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/636",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 628,
+        "definition_name": "nfsgateway_process",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 636,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/690",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 619,
+        "definition_name": "datanode_unmounted_data_dir",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 690,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/691",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 617,
+        "definition_name": "datanode_heap_usage",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 691,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/692",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 626,
+        "definition_name": "datanode_storage",
+        "host_name": "ali-dev-data-ambari-server002",
+        "id": 692,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/645",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 625,
+        "definition_name": "datanode_webui",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 645,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/650",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 621,
+        "definition_name": "datanode_process",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 650,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/653",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 628,
+        "definition_name": "nfsgateway_process",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 653,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/694",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 619,
+        "definition_name": "datanode_unmounted_data_dir",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 694,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/695",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 626,
+        "definition_name": "datanode_storage",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 695,
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/alerts/696",
+      "Alert": {
+        "cluster_name": "test_tpln",
+        "definition_id": 617,
+        "definition_name": "datanode_heap_usage",
+        "host_name": "ali-dev-data-ambari-server003",
+        "id": 696,
+        "service_name": "HDFS"
+      }
+    }
+  ],
+  "components": [
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/DATANODE",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "DATANODE",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/HDFS_CLIENT",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "HDFS_CLIENT",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/JOURNALNODE",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "JOURNALNODE",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/NAMENODE",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "NAMENODE",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/NFS_GATEWAY",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "NFS_GATEWAY",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/SECONDARY_NAMENODE",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "SECONDARY_NAMENODE",
+        "service_name": "HDFS"
+      }
+    },
+    {
+      "href": "http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS/components/ZKFC",
+      "ServiceComponentInfo": {
+        "cluster_name": "test_tpln",
+        "component_name": "ZKFC",
+        "service_name": "HDFS"
+      }
+    }
+  ],
+  "artifacts": []
+}
