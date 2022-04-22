@@ -65,6 +65,21 @@ Get the DATANODE component resource for the HDFS service of the cluster named 'c
     curl --user admin:admin http://172.28.30.95:8080/clusters/c1/services/HDFS/components/DATANODE
     curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS
 
+    //查询server001的datanode状态
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE
+    //pipe
+     grep -o '"state": "[^"]*'  | grep -o '[^"]*$'
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE | \
+    python3 -c "import sys, json; print(json.load(sys.stdin)[0]['title'])"
+    //-s不显示 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    curl --user admin:admin -s http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE/ | jq .HostRoles.state | sed 's/\"//g'
+
+    YARN：
+    curl --user admin:admin -s http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/NodeManager/ | jq .HostRoles.state | sed 's/\"//g'
+
+    HIVE:
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HIVE/components/HIVE_SERVER | jq .ServiceComponentInfo.state | sed 's/\"//g'
+
 **Response**
 
     200 OK
@@ -141,7 +156,21 @@ Start the HDFS service (update the state of the HDFS service to be ‘STARTED’
 
 
     PUT /clusters/c1/services/HDFS/
+    curl --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS
 
+    curl -X PUT https://reqbin.com/echo/put/json
+     -d "PUT request data" 
+
+    curl -X PUT --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/services/HDFS -H "Content-Type: application/json" -d "{\"ServiceInfo\":{\"state\":\"STARTED\"}}"
+
+    curl -X PUT --user admin:admin http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE -H "Content-Type: application/json" -d "{\"HostRoles\":{\"state\":\"STARTED\"}}"
+
+    curl -u admin:admin -X PUT -d '{"HostRoles": {"state": "STARTED"}}' http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE
+    
+
+    grep -o
+    curl -X PUT
+    -d "[request data]"
 **Body**
 
     {
