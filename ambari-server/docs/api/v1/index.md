@@ -73,9 +73,6 @@ Get the DATANODE component resource for the HDFS service of the cluster named 'c
     python3 -c "import sys, json; print(json.load(sys.stdin)[0]['title'])"
     //-s不显示 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
     curl --user admin:admin -s http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/ali-dev-data-ambari-server001/host_components/DATANODE/ | jq .HostRoles.state | sed 's/\"//g'
-    
-    
-
 
     YARN：
     yum -y install jq.x86_64
@@ -131,29 +128,57 @@ Get the DATANODE component resource for the HDFS service of the cluster named 'c
        	]
     }
 
-fileName : ambari-check.sh
+dev fileName : ambari-check.sh
 
     curl --user admin:admin -s http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2 | jq .HostRoles.state | sed 's/\"//g'
 
-fileName :  ambari-dingtalk.sh   
+dev fileName :  ambari-dingtalk.sh   
 
     curl https://oapi.dingtalk.com/robot/send?access_token=1977a57783c4f2bfbce86a20a4f1853047d3a64ae4a3d859509d2952a4577e7c -H 'Content-Type: application/json'  -d '{"msgtype": "text","text": {"content":"您好, '$1' :'$2' 正在重启"}}'
 
-fileName :  ambari-dingtalk-recovery.sh
+dev fileName :  ambari-dingtalk-recovery.sh
 
     curl https://oapi.dingtalk.com/robot/send?access_token=1977a57783c4f2bfbce86a20a4f1853047d3a64ae4a3d859509d2952a4577e7c -H 'Content-Type: application/json'  -d '{"msgtype": "text","text": {"content":"您好, '$1' :'$2' 重启成功"}}'
 
-fileName : ambari-start.sh
+dev fileName : ambari-start.sh
 
     sudo curl -u admin:admin -X PUT -d '{"HostRoles": {"state": "STARTED"}}' http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2
     
-fileName : ambari-start.sh
+dev fileName : ambari-start.sh
 
     sudo curl -u admin:admin -X PUT -d '{"HostRoles": {"state": "STARTED"}}' http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2
 
-ambari-tel.sh
+dev ambari-tel.sh
 
     sudo java -jar /home/wuhepengs/zabbixAlert-0.0.1-SNAPSHOT-jar-with-dependencies.jar $3 "{\"service\":\"$1:  $2\",\"reason\":\"已重启\"}"
+
+prod
+---
+prod fileName : ambari-check.sh
+
+    curl --user admin:admin -s http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2 | jq .HostRoles.state | sed 's/\"//g'
+
+prod fileName : ambari-dingtalk.sh
+
+    curl https://oapi.dingtalk.com/robot/send?access_token=1977a57783c4f2bfbce86a20a4f1853047d3a64ae4a3d859509d2952a4577e7c -H 'Content-Type: application/json'  -d '{"msgtype": "text","text": {"content":"您好, '$1' :'$2' 正在重启"}}'
+
+prod fileName : ambari-dingtalk-recovery.sh
+
+    curl https://oapi.dingtalk.com/robot/send?access_token=1977a57783c4f2bfbce86a20a4f1853047d3a64ae4a3d859509d2952a4577e7c -H 'Content-Type: application/json'  -d '{"msgtype": "text","text": {"content":"您好, '$1' :'$2' 重启成功"}}'
+
+prod fileName : ambari-start.sh
+
+    sudo curl -u admin:admin -X PUT -d '{"HostRoles": {"state": "STARTED"}}' http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2
+
+prod fileName : ambari-start.sh
+
+    sudo curl -u admin:admin -X PUT -d '{"HostRoles": {"state": "STARTED"}}' http://172.28.30.95:8080/api/v1/clusters/test_tpln/hosts/$1/host_components/$2
+
+prod fileName : ambari-tel.sh
+
+    sudo java -jar /home/wuhepengs/zabbixAlert-0.0.1-SNAPSHOT-jar-with-dependencies.jar $3 "{\"service\":\"$1:  $2\",\"reason\":\"已重启\"}"
+
+
 
 Management
 ----
